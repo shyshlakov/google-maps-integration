@@ -1,7 +1,6 @@
 using System.IO;
 using Data;
 using Data.Entities;
-using Helper;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -16,7 +15,6 @@ namespace GoogleMapsIntegration
         {
             CreateHostBuilder(args)
                     .Build()
-                    .MigrateDatabase<BaseDbContext>()
                     .Run();
         }
 
